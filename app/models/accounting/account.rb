@@ -1,7 +1,7 @@
 module Accounting
   class Account < ApplicationRecord
     class_attribute :normal_credit_balance
-    
+
     has_many :amounts, class_name: "Accounting::Amount"
     has_many :credit_amounts, :extend => AmountsExtension, :class_name => 'Accounting::CreditAmount'
     has_many :debit_amounts, :extend => AmountsExtension, :class_name => 'Accounting::DebitAmount'

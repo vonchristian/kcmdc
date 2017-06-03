@@ -280,7 +280,7 @@ PLATFORMS
 DEPENDENCIES
   barby
   bootstrap-datepicker-rails
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.6)
   bullet
   byebug
   capybara
@@ -310,7 +310,7 @@ DEPENDENCIES
   redis (~> 3.0)
   rspec-its
   rspec-rails
-  sass-rails (~> 5.0)
+  sass-rails (>= 3.2)
   shoulda-matchers
   simple_form
   spring

@@ -9,7 +9,7 @@ RSpec.describe Accounting::Account, type: :model do
     it { is_expected.to have_many :credit_entries }
     it { is_expected.to have_many :debit_entries }
   end
-  
+
   describe "validations" do
     it { is_expected.to validate_presence_of :type }
     it { is_expected.to validate_presence_of :name }

@@ -7,8 +7,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+  <body class="hold-transition skin-black-light sidebar-mini">
+      <div class="wrapper">
+        <%=render "layouts/shared/header" %>
+        <%=render "layouts/shared/sidebar" %>
+        <div class="content-wrapper">
+          <section class="content">
+            <ol class="breadcrumb">
+              <li><%#= breadcrumbs pretext: "You are here: ",
+                  separator: " &rsaquo; " %></li>
+            </ol>
+            <%=render "layouts/shared/flash_messages" %>
+            <%= yield %>
+          </section>
+        </div>
+          <%=render 'layouts/shared/footer' %>
+      </div>
+    </body>
+  </html>

@@ -17,7 +17,7 @@ module Accounting
 
     # Support the deprecated .build method
     before_save :set_default_date
-    
+
     def self.total(hash={})
       if hash[:from_date] && hash[:to_date]
         from_date = hash[:from_date].kind_of?(DateTime) ? hash[:from_date] : DateTime.parse(hash[:from_date])

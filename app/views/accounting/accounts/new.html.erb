@@ -1,0 +1,8 @@
+<%= simple_form_for @account, url: :accounting_accounts do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :account_code %>
+  <%= f.input :type %>
+  <%= f.input :contra %>
+  <%= f.submit %>
+<% end %>
