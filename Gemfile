@@ -37,6 +37,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'rspec-its'
+  gem 'faker'
 end
 
 group :development do
@@ -54,6 +55,6 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rack-mini-profiler'
+gem 'rack-mini-profiler', require: false
 gem 'memory_profiler'
 gem 'bullet'
